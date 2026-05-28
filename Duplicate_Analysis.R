@@ -34,8 +34,8 @@ write.table(genome, "C:/Users/curly/Desktop/Apple Genotyping/Results/2025_Extra_
 
 # Grouping Duplicate IDs --------------------------------------------------
 
-#Filter for PI_HAT >0.8 (duplicate threshold 0.9, but capture any pairs just below for manual investigation)
-genome <- genome[!(genome$PI_HAT < 0.8), ]
+#Filter for PI_HAT >0.97 (duplicate threshold)
+genome <- genome[!(genome$PI_HAT < 0.97), ]
 
 #Save .txt of duplicate pairs
 write.table(genome, "C:/Users/curly/Desktop/Apple Genotyping/Results/2025_Extra_Otago_Samples/Duplicates/Duplicate_Pairs.txt", sep = "\t", row.names = FALSE, quote = FALSE)
