@@ -38,7 +38,7 @@ for(i in seq_len(nrow(rename_df))){
 
 # Path to the Excel with renaming columns, and folder with .txt CNV files to be renamed
 excel_path <- "Inputs/Rename_Files.xlsx"
-file_dir <- "C:/Users/curly/Desktop/Apple Genotyping/Results/2025_Extra_Otago_Samples/Ploidy/Axiom_CNV_Output"
+file_dir <- "C:/Users/curly/Desktop/Apple Genotyping/Methods/2025_Extra_Otago_Samples/Inputs/CNV_Files"
 
 # Read Excel file
 rename_df <- read_excel(excel_path)
